@@ -45,7 +45,7 @@ class _GameOverScreenState extends State<GameOverScreen> {
                     ' New High Score ! ',
                     style: TextStyle(
                       fontSize: 24,
-                      color: Colors.green.shade700,
+                      color: Colors.green.shade500,
                       fontWeight: FontWeight.bold,
                       fontFamily: 'Game'
                     ),
