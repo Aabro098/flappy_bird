@@ -41,11 +41,11 @@ class _GameOverScreenState extends State<GameOverScreen> {
               future: isNewHighScore(),
               builder: (context, snapshot) {
                 if (snapshot.hasData && snapshot.data!) {
-                  return const Text(
-                    'New High Score!',
+                  return Text(
+                    ' New High Score ! ',
                     style: TextStyle(
                       fontSize: 24,
-                      color: Colors.green,
+                      color: Colors.green.shade700,
                       fontWeight: FontWeight.bold,
                       fontFamily: 'Game'
                     ),
