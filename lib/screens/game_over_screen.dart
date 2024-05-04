@@ -61,7 +61,7 @@ class _GameOverScreenState extends State<GameOverScreen> {
               onPressed: onRestart,
               child: const Text(
                 'Restart',
-                style: TextStyle(fontSize: 26, color: Colors.white),
+                style: TextStyle(fontSize: 24, color: Colors.white),
               ),
             ),
             const SizedBox(height: 20),
