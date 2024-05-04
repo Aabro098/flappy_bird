@@ -41,11 +41,11 @@ class _GameOverScreenState extends State<GameOverScreen> {
               future: isNewHighScore(),
               builder: (context, snapshot) {
                 if (snapshot.hasData && snapshot.data!) {
-                  return Text(
+                  return const Text(
                     ' New High Score ! ',
                     style: TextStyle(
                       fontSize: 24,
-                      color: Colors.green.shade500,
+                      color :  Color.fromARGB(255, 163, 253, 83) , 
                       fontWeight: FontWeight.bold,
                       fontFamily: 'Game'
                     ),
@@ -54,6 +54,7 @@ class _GameOverScreenState extends State<GameOverScreen> {
                 return const SizedBox(); 
               },
             ),
+            const SizedBox(height: 10,),
             Image.asset(AssetsImages.gameOver),
             const SizedBox(height: 20),
             ElevatedButton(
@@ -61,7 +62,7 @@ class _GameOverScreenState extends State<GameOverScreen> {
               onPressed: onRestart,
               child: const Text(
                 'Restart',
-                style: TextStyle(fontSize: 24, color: Colors.white),
+                style: TextStyle(fontSize: 20, color: Colors.white),
               ),
             ),
             const SizedBox(height: 20),

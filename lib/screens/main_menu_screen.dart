@@ -20,6 +20,7 @@ class MainMenuScreen extends StatelessWidget {
           game.resumeEngine();
         },
         child: Container(
+          padding: const EdgeInsets.only(top: 80),
           width: double.infinity,
           height: double.infinity,
           decoration: const BoxDecoration(
@@ -50,9 +51,9 @@ class MainMenuScreen extends StatelessWidget {
                       } else {
                         return Text(
                           'High Score: ${snapshot.data}',
-                          style: TextStyle(
+                          style: const TextStyle(
                             fontSize: 30 , 
-                            color : Colors.lightGreen.shade700 , 
+                            color : Color.fromARGB(255, 163, 253, 83) , 
                             fontWeight: FontWeight.w500,
                             fontFamily: 'Game'
                           ),
@@ -60,6 +61,13 @@ class MainMenuScreen extends StatelessWidget {
                       }
                     },
                   ),
+                  const Expanded(child: SizedBox()),
+                  const Text('Developed By - Arbin Shsrestha' ,
+                  style: TextStyle(
+                    fontSize: 12,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white
+                  ),)
                 ],
               ),
             ),
