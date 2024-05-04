@@ -12,6 +12,7 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_launcher_icons: ^0.13.1
+  flutter_native_splash: ^2.4.0
   flutter_secure_storage: ^9.0.0
 
 dev_dependencies:
@@ -19,9 +20,16 @@ dev_dependencies:
     sdk: flutter
   flutter_lints: ^3.0.0
 
+flutter_native_splash:
+  color: "#ADD8E6"
+  image: assets/images/bird_midflap.png 
+  android: true
+  ios: true
+
 flutter_icons:
   android: true
   ios: true
+  color: "#42a5f5"
   image_path : "assets/images/bird_midflap.png"
 
 flutter:
@@ -29,7 +37,6 @@ flutter:
 
   assets:
     - assets/images/
-    - assets/audio/
   
   fonts:
     - family: Game

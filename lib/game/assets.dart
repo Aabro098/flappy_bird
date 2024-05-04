@@ -20,8 +20,4 @@ class AssetsImages{
   static const pipeRotated = 'pipe_rotated.png';
   static const pipe = 'pipe.png';
 
-  static const swooshAudio = 'swoosh.wav';
-  static const dieAudio = 'collision.wav';
-  static const hitAudio = 'hit.wav';
-  static const wingAudio = 'fly.wav';
 }
